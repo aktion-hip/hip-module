@@ -2,29 +2,19 @@
 
 Magnolia light module for "Aktion HIP".
 
+## Installation
+
+```
+mgnl jumpstart
+cd light-modules
+git clone https://github.com/aktion-hip/vgz-module.git
+```
+
 ## Features
 
-<!--
-Provide a list of the key features this module provides for content
-authors, or whoever the primary user is. For a component template,
-consider providing screenshots of the rendered component and the
-component dialog.
--->
-
-## Usage
-
-<!--
-Provide details about how a developer can make the component template,
-or other features provided by the light module, available to content
-authors.
-
-This can include any special instructions about webresources or
-availability. This could include instructions on 3rd party dependencies
-such as jquery.
-
-Describe how a template can be configured with parameters if
-applicable.
--->
+- Theme
+- Pages
+- Components: Text, List, Bibliography
 
 ## Information on Magnolia CMS
 
@@ -33,4 +23,8 @@ https://docs.magnolia-cms.com
 
 ## License
 
+GNU General Public License (see [LICENSE](./LICENSE))
+
 ## Contributors
+
+Benno Luthiger
