@@ -1,0 +1,13 @@
+# Automatically generated dialog with few most often used fields (text, right, link, DAM image, multivalue, link to app, select). Feel free to modify them for your specific component.
+
+label: component.hip.list
+form:
+  properties:
+    title:
+      $type: textField
+      label: Title
+      required: false
+    content:
+      $type: richTextField
+      label: Content
+      required: true

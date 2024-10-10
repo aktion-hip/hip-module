@@ -1,0 +1,4 @@
+title: component.hip.list
+renderType: freemarker
+templateScript: /hip-module/templates/components/hipDefinitionList.ftl
+dialog: hip-module:components/hipDefinitionList

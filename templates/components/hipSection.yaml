@@ -1,0 +1,4 @@
+title: component.hip.section
+renderType: freemarker
+templateScript: /hip-module/templates/components/hipSection.ftl
+dialog: hip-module:components/hipSection

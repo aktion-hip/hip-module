@@ -1,0 +1,101 @@
+ul.hip-nav li {
+    display: inline;
+    margin-right: 0.7em;
+}
+
+.hip-nav .active {
+    text-decoration: none;
+    background-color: #FFF;
+    color: #242943;
+    cursor: default;
+}
+
+.hip-nav .active:hover {
+    color: #242943;
+    box-shadow: none;
+}
+
+ul.hip-menu.actions.stacked>li {
+    border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+    padding: 0.7em 0 0.7em;
+}
+
+ul.hip-menu.actions.stacked>li:first-child {
+    border-bottom: 0;
+}
+
+ul.hip-menu span {
+    color: #9bf1ff;
+}
+
+ul.hip-menu>li>a {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+body.hip-page {
+    background-color: #72B8D2;
+}
+
+.hipSection h2,
+.hipSection h3 {
+    margin-bottom: 0;
+}
+
+.hipSection p {
+    margin-bottom: 0.7em;
+}
+
+.hipSection header.major {
+    margin-bottom: 0.7em;
+}
+
+.hipSection .teaser {
+    margin-bottom: 0.7em;
+    font-style: italic;
+}
+
+.hip-home-page #banner.major {
+    height: 40vh;
+    min-height: 20em;
+    max-height: 45em;
+}
+
+.hip-home-page #banner>.inner .content {
+    display: inherit;
+}
+
+.hip-home-page #main>*>.inner {
+    padding-top: 2em;
+}
+
+.hip-home-page #banner>.inner header {
+    padding-top: 2em;
+}
+
+.hipDefinitionList ol,
+.hipDefinitionList ul {
+    list-style-type: none;
+    margin-bottom: 0.3em;
+}
+
+.hipDefinitionList li>strong {
+    position: relative;
+    left: -1.5em;
+}
+
+.hipDefinitionList h3 {
+    margin-bottom: 0.2em;
+}
+
+h3.hipDefinitionList {
+    margin-top: 1.5em;
+}
+
+.hip-page #footer .copyright li {
+    color: #242943;
+}
+
+.hip-home-page #footer .copyright li {
+    color: #9bf1ff;
+}

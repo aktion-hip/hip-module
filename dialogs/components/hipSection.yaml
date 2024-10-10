@@ -1,0 +1,20 @@
+label: component.hip.section
+form:
+  properties:
+    title:
+      $type: textField
+      label: Title
+      i18n: true
+      required: false
+    teaser:
+      $type: richTextField
+      label: Teaser
+      i18n: true
+      required: false
+      height: 100
+    desc:
+      $type: richTextField
+      label: Content
+      fontSizes: 16/1em;20/1.25em;24/1.5em
+      i18n: true
+      required: true

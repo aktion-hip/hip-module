@@ -1,0 +1,20 @@
+templates:
+  availability:
+    templates:
+      home:
+        id: hip-module:pages/hip-home-page
+      page:
+        id: hip-module:pages/hip-page
+theme:
+  name: hip-theme
+i18n:
+  class: info.magnolia.cms.i18n.DefaultI18nContentSupport
+  enabled: true
+  fallbackLocale: de
+  locales:
+    de:
+      enabled: true
+      language: de
+    en:
+      enabled: true
+      language: en

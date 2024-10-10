@@ -1,0 +1,39 @@
+cssFiles:
+  hip:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/css/hip.css
+    media: all
+  main:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/css/main.css
+    media: all
+  noscript:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/css/noscript.css
+    media: all
+  fontawesome-all:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/css/fontawesome-all.min.css
+    media: all
+jsFiles:
+  main:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/js/main.js
+  util:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/js/util.js
+  browser:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/js/browser.min.js
+  breakpoints:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/js/breakpoints.min.js
+  jquery:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/js/jquery.min.js
+  jquery.scrollex:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/js/jquery.scrollex.min.js
+  jquery.scrolly:
+    addFingerPrint: true
+    link: /.resources/hip-module/webresources/js/jquery.scrolly.min.js

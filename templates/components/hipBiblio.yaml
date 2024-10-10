@@ -1,0 +1,4 @@
+title: component.hip.biblio
+renderType: freemarker
+templateScript: /hip-module/templates/components/hipBiblio.ftl
+dialog: hip-module:components/hipBiblio

@@ -1,0 +1,17 @@
+title: hip-page
+templateScript: /hip-module/templates/pages/hip-page.ftl
+renderType: freemarker
+dialog: hip-module:pages/hip-page
+visible: true
+
+areas:
+  section:
+    renderType: freemarker
+    availableComponents:
+      hipSection:
+        id: hip-module:components/hipSection
+      hipList:
+        id: hip-module:components/hipDefinitionList
+      hipBiblio:
+        id: hip-module:components/hipBiblio
+    optional: true

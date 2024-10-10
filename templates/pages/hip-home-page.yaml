@@ -1,0 +1,13 @@
+title: hip-home-page
+templateScript: /hip-module/templates/pages/hip-home-page.ftl
+renderType: freemarker
+dialog: hip-module:pages/hip-home-page
+visible: true
+
+areas:
+  section:
+    renderType: freemarker
+    availableComponents:
+      hipSection:
+        id: hip-module:components/hipSection
+    optional: true

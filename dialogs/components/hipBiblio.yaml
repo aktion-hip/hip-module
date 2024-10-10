@@ -1,0 +1,38 @@
+label: component.hip.biblio
+form:
+  properties:
+    title:
+      $type: textField
+      label: Title
+      i18n: true
+      required: true
+    year:
+      $type: textField
+      label: component.hip.biblio.year
+      i18n: true
+      required: true
+    url:
+      $type: textField
+      label: component.hip.biblio.url
+      i18n: true
+      required: false
+    authors:
+      $type: textField
+      label: component.hip.biblio.authors
+      i18n: true
+      required: false
+    editors:
+      $type: textField
+      label: component.hip.biblio.editors
+      i18n: true
+      required: false
+    publication:
+      $type: textField
+      label: component.hip.biblio.publication
+      i18n: true
+      required: false
+    publisher:
+      $type: textField
+      label: component.hip.biblio.publisher
+      i18n: true
+      required: false
