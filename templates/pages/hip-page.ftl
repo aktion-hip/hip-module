@@ -2,7 +2,6 @@
 <html xml:lang="${cmsfn.language()}" lang="${cmsfn.language()}">
   <head>
     [@cms.page /]
-    [#include "../includes/functions.ftl"]
     [#assign siteRoot = cmsfn.root(content, "mgnl:page")!content ]
 
     <meta charset="utf-8" />
@@ -21,37 +20,8 @@
   <body class="hip-page ${cmsfn.language()}">
     <!-- Wrapper start -->
     <div id="wrapper">
-      <!-- Header -->
-      <header id="header">
-        <a href="${cmsfn.link(siteRoot)}" class="logo"><strong>${siteRoot.title!}</strong></a>
+      [#include "../includes/header.ftl"]
 
-        <ul class="actions hip-nav">
-        [#list cmsfn.children(siteRoot, "mgnl:page") as child]
-          [#if isEqualPath(child, content)]
-            <li><span class="button small fit active">${child.title!}</span></li>
-          [#else]
-            <li><a href="${cmsfn.link(child)}" class="button small fit">${child.title!}</a></li>
-          [/#if]
-        [/#list]
-        </ul>
-
-        <nav>
-          <a href="#menu">Menu</a>
-        </nav>
-      </header>
-      <!-- Menu -->
-      <nav id="menu">
-        <ul class="actions stacked hip-menu">
-          <li><a href="${cmsfn.link(siteRoot)}" class="button fit">Home</a></li>
-          [#list cmsfn.children(siteRoot, "mgnl:page") as child ]
-            [#if isEqualPath(child, content)]
-              <li><span class="fit active">${child.title!}</span></li>
-            [#else]
-              <li><a href="${cmsfn.link(child)}">${child.title!}</a></li>
-            [/#if]
-          [/#list]        
-        </ul>
-      </nav>
       <!-- Main -->
       <div id="main" class="alt">
         <section id="one" class="tiles">

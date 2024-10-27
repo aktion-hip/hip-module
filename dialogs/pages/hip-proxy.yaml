@@ -1,0 +1,23 @@
+label: hip.page.proxy
+form:
+  properties:
+    title:
+      $type: textField
+      label: hip.page.proxy.title
+      i18n: true
+      required: true
+    target:
+      $type: pageLinkField
+      label: hip.page.proxy.target
+      i18n: true
+      required: true
+      showOptions: false
+      textInputAllowed: true
+  layout:
+    $type: tabbedLayout
+    tabs:
+      tabMain:
+        label: Main tab
+        fields:
+          - name: title
+          - name: target

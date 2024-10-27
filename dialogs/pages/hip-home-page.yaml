@@ -34,6 +34,26 @@ form:
       label: Teaser
       i18n: true
       required: false
+    socX:
+      $type: textField
+      label: X
+      i18n: true
+    socGithub:
+      $type: textField
+      label: Github
+      i18n: true
+    socLinkedin:
+      $type: textField
+      label: Linkedin
+      i18n: true
+    socFacebook:
+      $type: textField
+      label: Facebook
+      i18n: true
+    socInstagram:
+      $type: textField
+      label: Instagram
+      i18n: true
   layout:
     $type: tabbedLayout
     tabs:
@@ -53,3 +73,11 @@ form:
         label: Teaser
         fields:
           - name: teaser
+      tabSocialMedia:
+        label: Social Media
+        fields:
+          - name: socX
+          - name: socGithub
+          - name: socLinkedin
+          - name: socFacebook
+          - name: socInstagram

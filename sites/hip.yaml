@@ -5,6 +5,8 @@ templates:
         id: hip-module:pages/hip-home-page
       page:
         id: hip-module:pages/hip-page
+      proxy:
+        id: hip-module:pages/hip-proxy
 theme:
   name: hip-theme
 i18n:

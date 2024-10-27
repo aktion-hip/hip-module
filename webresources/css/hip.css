@@ -3,12 +3,17 @@ ul.hip-nav li {
     margin-right: 0.7em;
 }
 
-.hip-nav .active {
+.hip-nav .active,
+.hip-nav .active_tree {
     text-decoration: none;
     background-color: #FFF;
     color: #242943;
+}
+
+.hip-nav .active {
     cursor: default;
 }
+
 
 .hip-nav .active:hover {
     color: #242943;
@@ -92,10 +97,72 @@ h3.hipDefinitionList {
     margin-top: 1.5em;
 }
 
+.hip-home-page #footer .inner,
+.hip-page #footer .inner {
+    position: relative;
+}
+
+.hip-home-page #footer .icons,
+.hip-page #footer .icons,
+.hip-home-page #footer .copyright,
+.hip-page #footer .copyright {
+    display: inline-block;
+}
+
+.hip-home-page #footer .copyright,
+.hip-page #footer .copyright {
+    position: absolute;
+    right: 0;
+    bottom: 3.5em;
+}
+
 .hip-page #footer .copyright li {
     color: #242943;
 }
 
 .hip-home-page #footer .copyright li {
     color: #9bf1ff;
+}
+
+.hipBiblio {
+    padding-bottom: 0.7em;
+    line-height: 1.4;
+}
+
+.hipBiblio.bib_description {
+    padding-bottom: 0;
+}
+
+.hipBiblio>span {
+    font-size: 1.2rem;
+}
+
+.hipBiblio .bib_publication>span {
+    font-style: italic;
+}
+
+.hipBiblio .bib_authors {
+    padding-right: 0;
+    font-size: 1.2rem;
+}
+
+.bib_description>p {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+#footer .social-icon {
+    display: inline-block;
+    line-height: 35px;
+    transition: opacity 80ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#footer a.social-icon {
+    text-decoration: none;
+    color: #000;
+}
+
+#footer .social-icon img {
+    max-height: 32px;
+    max-width: 32px;
 }

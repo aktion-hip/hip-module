@@ -36,3 +36,14 @@ form:
       label: component.hip.biblio.publisher
       i18n: true
       required: false
+    description:
+      $type: richTextField
+      label: component.hip.biblio.description
+      i18n: true
+      required: false
+      height: 150
+      lists: false
+      fonts: ""
+      subscript: false
+      superscript: false
+      specialCharacters: false
