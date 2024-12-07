@@ -14,7 +14,6 @@ ul.hip-nav li {
     cursor: default;
 }
 
-
 .hip-nav .active:hover {
     color: #242943;
     box-shadow: none;
@@ -160,6 +159,10 @@ h3.hipDefinitionList {
 #footer a.social-icon {
     text-decoration: none;
     color: #000;
+}
+
+.hip-page #footer a.social-icon {
+    color: #72B8D2;
 }
 
 #footer .social-icon img {

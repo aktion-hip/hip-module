@@ -1,37 +1,38 @@
+[#assign root = cmsfn.root(content, "mgnl:page")!content ]
 <footer id="footer">
     <div class="inner">
         <ul class="icons">
-            [#if content.socX?has_content]
+            [#if root.socX?has_content]
                 <li>
-                    <a href="${content.socX!}" class="social-icon">
+                    <a href="${root.socX!}" class="social-icon">
                         <img src="${ctx.contextPath}/.resources/hip-module/webresources/icons/x-white.svg" alt="Aktion HIP auf X">
                     </a>
                 </li>
             [/#if]
-            [#if content.socGithub?has_content]
+            [#if root.socGithub?has_content]
                 <li>
-                    <a href="${content.socGithub!}" class="social-icon">
+                    <a href="${root.socGithub!}" class="social-icon">
                         <img src="${ctx.contextPath}/.resources/hip-module/webresources/icons/github-white.svg" alt="Aktion HIP auf GitHub">
                     </a>
                 </li>
             [/#if]
-            [#if content.socLinkedin?has_content]
+            [#if root.socLinkedin?has_content]
                 <li>
-                    <a href="${content.socLinkedin!}" class="social-icon">
+                    <a href="${root.socLinkedin!}" class="social-icon">
                         <img src="${ctx.contextPath}/.resources/hip-module/webresources/icons/linkedin-white.svg" alt="Aktion HIP auf LinkedIn">
                     </a>
                 </li>
             [/#if]
-            [#if content.socFacebook?has_content]
+            [#if root.socFacebook?has_content]
                 <li>
-                    <a href="${content.socFacebook!}" class="social-icon">
+                    <a href="${root.socFacebook!}" class="social-icon">
                         <img src="${ctx.contextPath}/.resources/hip-module/webresources/icons/facebook-white.svg" alt="Aktion HIP auf Facebook">
                     </a>
                 </li>
             [/#if]
-            [#if content.socInstagram?has_content]
+            [#if root.socInstagram?has_content]
                 <li>
-                    <a href="${content.socInstagram!}" class="social-icon">
+                    <a href="${root.socInstagram!}" class="social-icon">
                         <img src="${ctx.contextPath}/.resources/hip-module/webresources/icons/instagram-white.svg" alt="Aktion HIP auf Instagram">
                     </a>
                 </li>
@@ -39,6 +40,9 @@
         </ul>
         <ul class="copyright">
             <li>&copy; Aktion HIP</li>
+            [#if root.disclaimer?has_content]
+                <li><a href="${cmsfn.link(cmsfn.contentById(root.disclaimer))}">Disclaimer</a></li>
+            [/#if]
             <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
         </ul>
     </div>

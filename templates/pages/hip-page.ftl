@@ -38,16 +38,9 @@
             </div>          
           </div>
         </section>
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="inner">
-          <ul class="copyright">
-            <li>&copy; Aktion HIP</li>
-            <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-          </ul>
-        </div>
-      </footer>        
       </div>
+
+      [#include "../includes/footer-home.ftl"]
     </div>
     <!-- Wrapper end -->
     <!-- Scripts -->

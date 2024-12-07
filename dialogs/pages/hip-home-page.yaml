@@ -19,6 +19,12 @@ form:
       defaultValue: false
       label: Hide in navigation
       buttonLabel: Hide
+    disclaimer:
+      $type: pageLinkField
+      label: Disclaimer
+      i18n: true
+      showOptions: true
+      textInputAllowed: true
     keywords:
       $type: textField
       label: Keywords
@@ -64,6 +70,7 @@ form:
           - name: navigationTitle
           - name: windowTitle
           - name: hideInNav
+          - name: disclaimer
       tabMeta:
         label: Metadata
         fields:
