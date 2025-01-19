@@ -1,0 +1,31 @@
+name: Copy light module into production
+on:
+  push:
+    branches:
+      - production
+jobs:
+  copy_to_target:
+    name: Copy HIP light module
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: copy file via ssh key (author)
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          target: "/magnolia/magnolia-6.3.3/apache-tomcat-9.0.98/webapps/magnoliaAuthor/modules/hip-module"
+          source: "*"
+
+      - name: copy file via ssh key (publish)
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          target: "/magnolia/magnolia-6.3.3/apache-tomcat-9.0.98/webapps/magnoliaPublic/modules/hip-module"
+          source: "*"
