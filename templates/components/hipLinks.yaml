@@ -1,0 +1,4 @@
+title: component.hip.links
+renderType: freemarker
+templateScript: /hip-module/templates/components/hipLinks.ftl
+dialog: hip-module:components/hipLinks
