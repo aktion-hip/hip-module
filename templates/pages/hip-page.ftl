@@ -15,6 +15,7 @@
     [#list theme.cssFiles as cssFile]
     <link rel="stylesheet" type="text/css" href="${cssFile.link}" media="${cssFile.media}" />
     [/#list]
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   
   <body class="hip-page ${cmsfn.language()}">
@@ -26,6 +27,21 @@
       <div id="main" class="alt">
         <section id="one" class="tiles">
           <div class="inner">
+            [#if content.showBreadcrumb?has_content && content.showBreadcrumb]
+              <ul class="breadcrumb">
+              [#list cmsfn.ancestors(content, "mgnl:page") as ancestor ]
+                [#if (!ancestor?is_first)]
+                  <li>
+                    <a href="${cmsfn.link(ancestor)}">${ancestor.title!}</a>
+                    [#if (!ancestor?is_last)]
+                      <span aria-hidden="true" class="material-icons">chevron_right</span>
+                    [/#if]
+                  </li>                  
+                [/#if]
+              [/#list]
+              </ul>
+            [/#if]
+
             <header class="major">
               <h1>${content.title!}</h1>
             </header>

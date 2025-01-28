@@ -11,7 +11,7 @@
   <ul>
   [#list cmsfn.children(parent, "mgnl:page") as child ]
       <li>
-        <a href="${cmsfn.link(child)}"">${child.title!}</a>
+        <a href="${cmsfn.link(child)}">${child.title!}</a>
       </li>
   [/#list]
   </ul>
