@@ -14,4 +14,6 @@ areas:
         id: hip-module:components/hipDefinitionList
       hipBiblio:
         id: hip-module:components/hipBiblio
+      hipLinks:
+        id: hip-module:components/hipLinks
     optional: true

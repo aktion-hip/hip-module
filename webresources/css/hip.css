@@ -101,6 +101,19 @@ h3.hipDefinitionList {
     position: relative;
 }
 
+.hip-page #main .inner {
+    max-width: 60em;
+}
+
+.hip-page header.major {
+    max-width: calc(100% - 0.5em);
+    width: max-content;
+}
+
+.hip-page header.major h1 {
+    width: calc(100% + 0.5em);
+}
+
 .hip-home-page #footer .icons,
 .hip-page #footer .icons,
 .hip-home-page #footer .copyright,
@@ -168,6 +181,30 @@ h3.hipDefinitionList {
 #footer .social-icon img {
     max-height: 32px;
     max-width: 32px;
+}
+
+.hip-page .breadcrumb {
+    position: relative;
+    top: -2em;
+    padding-left: 0;
+    list-style: none;
+    font-size: .875rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.hip-page .breadcrumb>li:first-child {
+    padding-left: 0;
+}
+
+.hip-page .breadcrumb a {
+    margin-bottom: 0.5em;
+    vertical-align: top;
+}
+
+.hip-page .breadcrumb span.material-icons {
+    font-size: 0.9rem;
 }
 
 @media screen and (max-width: 736px) {
