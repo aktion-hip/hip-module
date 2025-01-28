@@ -19,6 +19,11 @@ form:
       defaultValue: false
       label: Hide in navigation
       buttonLabel: Hide
+    showBreadcrumb:
+      $type: checkBoxField
+      defaultValue: false
+      label: Show breadcrumb
+      buttonLabel: Show
     keywords:
       $type: textField
       label: Keywords
@@ -44,6 +49,7 @@ form:
           - name: navigationTitle
           - name: windowTitle
           - name: hideInNav
+          - name: showBreadcrumb
       tabMeta:
         label: Metadata
         fields:

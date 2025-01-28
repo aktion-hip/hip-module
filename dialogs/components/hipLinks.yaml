@@ -1,0 +1,20 @@
+label: component.links.title
+form:
+  properties:
+    title:
+      $type: textField
+      label: component.links.title.fld
+      i18n: true
+    teaser:
+      $type: richTextField
+      label: component.links.teaser.fld
+      i18n: true
+      required: false
+      height: 100
+    parent:
+      $type: pageLinkField
+      label: component.links.parent.fld
+      i18n: true
+      required: true
+      showOptions: false
+      textInputAllowed: true
