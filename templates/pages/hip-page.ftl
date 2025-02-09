@@ -5,8 +5,7 @@
     [#assign siteRoot = cmsfn.root(content, "mgnl:page")!content ]
 
     <meta charset="utf-8" />
-    <title>${siteRoot.title!}: ${content.windowTitle!content.title!}
-    </title>
+    <title>${siteRoot.title!}: ${content.windowTitle!}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="${content.description!}" />
     <meta name="keywords" content="${content.keywords!}" />

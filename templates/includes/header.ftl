@@ -9,11 +9,11 @@
         <li><a href="${childOfRoot.target!}" class="button small fit">${childOfRoot.title!}</a></li>
     [#else]
         [#if isEqualPath(childOfRoot, content)]
-        <li><span class="button small fit active">${childOfRoot.title!}</span></li>
+        <li><span class="button small fit active">${childOfRoot.navigationTitle!}</span></li>
         [#elseif isAncestorOf(childOfRoot, content)]
-        <li><a href="${cmsfn.link(childOfRoot)}" class="button small fit active_tree">${childOfRoot.title!}</a></li>
+        <li><a href="${cmsfn.link(childOfRoot)}" class="button small fit active_tree">${childOfRoot.navigationTitle!}</a></li>
         [#else]
-        <li><a href="${cmsfn.link(childOfRoot)}" class="button small fit">${childOfRoot.title!}</a></li>
+        <li><a href="${cmsfn.link(childOfRoot)}" class="button small fit">${childOfRoot.navigationTitle!}</a></li>
         [/#if]
     [/#if]
 [/#list]
@@ -34,11 +34,11 @@
             <li><a href="${childOfRoot.target!}">${childOfRoot.title!}</a></li>
         [#else]
             [#if isEqualPath(childOfRoot, content)]
-                <li><span class="fit active">${childOfRoot.title!}</span></li>
+                <li><span class="fit active">${childOfRoot.navigationTitle!}</span></li>
             [#elseif isAncestorOf(childOfRoot, content)]
-                <li><a href="${cmsfn.link(childOfRoot)}">${childOfRoot.title!}</a></li>
+                <li><a href="${cmsfn.link(childOfRoot)}">${childOfRoot.navigationTitle!}</a></li>
             [#else]
-                <li><a href="${cmsfn.link(childOfRoot)}">${childOfRoot.title!}</a></li>
+                <li><a href="${cmsfn.link(childOfRoot)}">${childOfRoot.navigationTitle!}</a></li>
             [/#if]
         [/#if]
     [/#list]        
